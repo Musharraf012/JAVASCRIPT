@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            js
+        </title>
+    </head>
+    <body>
+        <input type="number" id="myinput" value="" >
+        <button onclick="checkNumber()">Check Number</button>
+        <div id="display"></div>
+        <script>
+           function checkNumber()
+           {
+            let number = document.getElementById("myinput").value
+            if(number >= 70)
+            {
+                document.getElementById("display").innerHTML = "distinction"
+            }
+            if(number >50 && number <= 60)
+            {
+                document.getElementById("display").innerHTML = "second class"
+            }
+            else if(number >=60 && number <=70)
+            {
+                document.getElementById("display").innerHTML = "first class"
+            }
+            else if(number <=50 && number >=35)
+            {
+                document.getElementById("display").innerHTML = "pass class"
+            }
+            else if(number < 35)
+            {
+                document.getElementById("display").innerHTML = "Fail"
+            }
+           
+           }
+        </script>
+        
+    </body>
+</html>

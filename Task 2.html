@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tas 2</title>
+    </head>
+    <body>
+        <input type="number" id="myinput" value="">
+        <button onclick="checkNumber()">Check number</button>
+        <div id="display"></div>
+        <script>
+            function checkNumber()
+            {
+                let number = document.getElementById("myinput").value
+                if (number <= 5000)
+                {
+                    document.getElementById("display").innerHTML = "5% discount"
+                }
+                if (number >= 5000 && number <=10000)
+                {
+                    document.getElementById("display").innerHTML = "10% discount"
+                }
+                if (number >10000 && number <=15000)
+                {
+                    document.getElementById("display").innerHTML = "15% discount"
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>button function</title>
+    </head>
+    <body>
+        <button onclick="addition(5,5)">add + </button>
+        <button onclick="substraction(25,5)">Less -</button>
+        <button  onclick="multipication(6,5)">multi *</button>
+        <button onclick="division(200,5)">div /</button>
+
+        <div id="ans"></div>
+ 
+        <script>
+            function addition(a,b){
+                document.getElementById("ans").innerHTML = -- a + b;
+            }
+            function substraction(a,b){
+                document.getElementById("ans").innerHTML = a-b;
+            }
+            function multipication(a,b){
+                document.getElementById("ans").innerHTML = a * b;
+            }
+            function division(a,b){
+                document.getElementById("ans").innerHTML = a / b;
+            }
+        </script>
+    </body>
+</html>
