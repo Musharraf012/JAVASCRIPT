@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhoneBook</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="section-center">
+      <!-- form -->
+      <form class="phone-form">
+        <p class="alert"></p>
+        <h3>PhoneBook</h3>
+        <div class="form-control">
+          <input type="text" id="firstname" placeholder="First Name" />
+          <input type="text" id="lastname" placeholder="Last Name" />
+          <input type="number" id="phonenumber" placeholder="Phone Number" />
+          <button type="button" class="submit-btn" onclick="AddItems()">submit</button>
+        </div>
+      </form>
+      <!-- list -->
+      <div class="people-container">
+        <div class="people-list">
+          <div id="peoplelist">
+            </div>
+        </div>
+        <button class="clear-btn" onclick="ClearItems()">clear items</button>
+      </div>
+    </section>
+    <!-- javascript -->
+    <script src="js/js.js"></script>
+  </body>
+</html>
